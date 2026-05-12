@@ -51,7 +51,7 @@ const SearchSection = () => {
                 placeholder="Cari berdasarkan nama, universitas, atau jurusan..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="w-full pl-13 pr-14 py-4 pl-14 rounded-2xl glass-strong text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-indigo/30 transition-all text-sm shadow-card"
+                className="w-full px-14 py-4 rounded-2xl glass-strong text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-indigo/30 transition-all text-sm shadow-card"
               />
               <button className="absolute right-3 p-2.5 rounded-xl bg-gradient-to-r from-indigo to-indigo-dark text-primary-foreground hover:shadow-glow-indigo/50 transition-all">
                 <SlidersHorizontal className="w-4 h-4" />
