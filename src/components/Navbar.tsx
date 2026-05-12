@@ -99,18 +99,15 @@ const Navbar = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden overflow-hidden bg-card/95 backdrop-blur-xl border-t border-border/60 pointer-events-auto relative z-50"
+            className="md:hidden bg-card/95 backdrop-blur-xl border-t border-border/60 pointer-events-auto relative z-50"
           >
             <div className="p-4 flex flex-col gap-1">
               {navLinks.map((l) => (
                 <a
                   key={l.href}
                   href={l.href}
-                  onClick={(e) => {
-                    // Delay closing menu to allow navigation to complete
-                    setTimeout(() => setMobileOpen(false), 300);
-                  }}
-                  className="px-4 py-3 rounded-xl text-sm font-medium text-foreground/80 hover:bg-secondary transition-colors block"
+                  onClick={() => setMobileOpen(false)}
+                  className="px-4 py-3 rounded-xl text-sm font-medium text-foreground/80 hover:bg-secondary transition-colors block cursor-pointer"
                 >
                   {l.label}
                 </a>
