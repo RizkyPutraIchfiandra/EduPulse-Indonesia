@@ -31,13 +31,16 @@ const Navbar = () => {
     }
 
     // Jika sudah di "/", scroll ke section menggunakan scrollIntoView untuk mobile compatibility
-    const element = document.querySelector(hashHref);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    } else {
-      // Fallback ke hash jika element tidak ditemukan
-      window.location.hash = hashHref;
-    }
+    // Tambah delay kecil untuk memastikan DOM ready setelah menu tutup
+    setTimeout(() => {
+      const element = document.querySelector(hashHref);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        // Fallback ke hash jika element tidak ditemukan
+        window.location.hash = hashHref;
+      }
+    }, 100);
   };
 
   return (
@@ -104,9 +107,12 @@ const Navbar = () => {
                   key={l.href}
                   href={l.href}
                   onClick={(e) => {
-                    e.preventDefault();
                     setMobileOpen(false);
-                    handleNav(l.href);
+                    // Biarkan default anchor behavior bekerja untuk mobile
+                    if (location.pathname !== "/") {
+                      e.preventDefault();
+                      handleNav(l.href);
+                    }
                   }}
                   className="px-4 py-3 rounded-xl text-sm font-medium text-foreground/80 hover:bg-secondary transition-colors"
                 >
