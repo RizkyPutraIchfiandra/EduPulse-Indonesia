@@ -30,8 +30,14 @@ const Navbar = () => {
       return;
     }
 
-    // Jika sudah di "/", cukup biarkan browser melakukan scroll berdasarkan hash.
-    window.location.hash = hashHref;
+    // Jika sudah di "/", scroll ke section menggunakan scrollIntoView untuk mobile compatibility
+    const element = document.querySelector(hashHref);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Fallback ke hash jika element tidak ditemukan
+      window.location.hash = hashHref;
+    }
   };
 
   return (
