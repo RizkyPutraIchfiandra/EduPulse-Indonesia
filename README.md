@@ -58,6 +58,18 @@ This project is built with:
 - React Router
 - Framer Motion
 
+## Data Integration
+
+### Contact Form Data
+
+Data dari form "Hubungi Kami" akan dikirim ke Google Sheets:
+- [Google Sheets - Hubungi Kami](https://docs.google.com/spreadsheets/d/1vsrNekTap8NcZiaVKWvACreDY6NervSkYqT6N8s_dKA/edit?usp=sharing)
+
+### Professor Rating Data
+
+Data rating dosen akan dikirim ke Google Sheets:
+- [Google Sheets - Rating Dosen](https://docs.google.com/spreadsheets/d/1IKmL1molPw3W52j6zv85Ls-3fcKON-VQXq8WGpd5sAU/edit?usp=sharing)
+
 ## How to deploy this project
 
 ### Deploy to Vercel
