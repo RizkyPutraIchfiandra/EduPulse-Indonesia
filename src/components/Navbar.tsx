@@ -106,14 +106,7 @@ const Navbar = () => {
                 <a
                   key={l.href}
                   href={l.href}
-                  onClick={(e) => {
-                    setMobileOpen(false);
-                    // Biarkan default anchor behavior bekerja untuk mobile
-                    if (location.pathname !== "/") {
-                      e.preventDefault();
-                      handleNav(l.href);
-                    }
-                  }}
+                  onClick={() => setMobileOpen(false)}
                   className="px-4 py-3 rounded-xl text-sm font-medium text-foreground/80 hover:bg-secondary transition-colors"
                 >
                   {l.label}
