@@ -99,7 +99,7 @@ const Navbar = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden overflow-hidden glass-strong"
+            className="md:hidden overflow-hidden glass-strong pointer-events-auto"
           >
             <div className="p-4 flex flex-col gap-1">
               {navLinks.map((l) => (
@@ -107,7 +107,7 @@ const Navbar = () => {
                   key={l.href}
                   href={l.href}
                   onClick={() => setMobileOpen(false)}
-                  className="px-4 py-3 rounded-xl text-sm font-medium text-foreground/80 hover:bg-secondary transition-colors"
+                  className="px-4 py-3 rounded-xl text-sm font-medium text-foreground/80 hover:bg-secondary transition-colors pointer-events-auto"
                 >
                   {l.label}
                 </a>
