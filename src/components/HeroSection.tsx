@@ -1,11 +1,20 @@
 import { motion } from "framer-motion";
-import { Search, ArrowRight, Zap, GraduationCap } from "lucide-react";
+import { Search, ArrowRight, Zap, GraduationCap, BookOpen, PenTool, Lightbulb, Star, Users, Brain } from "lucide-react";
 import heroIllustration from "@/assets/hero-illustration.png";
 
 const floatingLabels = [
-  { text: "Full Discussion", x: "75%", y: "15%", delay: 0 },
-  { text: "Friendly Vibe", x: "85%", y: "55%", delay: 0.5 },
-  { text: "Deep Diver", x: "70%", y: "80%", delay: 1 },
+  { text: "Full Discussion", icon: BookOpen, x: "75%", y: "15%", delay: 0 },
+  { text: "Friendly Vibe", icon: Users, x: "85%", y: "55%", delay: 0.5 },
+  { text: "Deep Diver", icon: Brain, x: "70%", y: "80%", delay: 1 },
+];
+
+const floatingIcons = [
+  { icon: BookOpen, x: "5%", y: "20%", delay: 0, size: "w-8 h-8", color: "text-indigo/20" },
+  { icon: PenTool, x: "12%", y: "70%", delay: 1.5, size: "w-6 h-6", color: "text-teal/20" },
+  { icon: Lightbulb, x: "88%", y: "25%", delay: 0.8, size: "w-7 h-7", color: "text-coral/20" },
+  { icon: Star, x: "92%", y: "75%", delay: 2, size: "w-5 h-5", color: "text-amber/20" },
+  { icon: GraduationCap, x: "8%", y: "45%", delay: 1.2, size: "w-6 h-6", color: "text-indigo/15" },
+  { icon: Brain, x: "95%", y: "50%", delay: 0.5, size: "w-6 h-6", color: "text-teal/15" },
 ];
 
 const HeroSection = () => {
@@ -22,6 +31,20 @@ const HeroSection = () => {
           backgroundSize: "60px 60px",
         }} />
       </div>
+
+      {/* Floating decorative icons */}
+      {floatingIcons.map((item, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1 + item.delay, duration: 0.6 }}
+          className={`absolute hidden lg:block ${item.color} animate-float-slow`}
+          style={{ left: item.x, top: item.y, animationDelay: `${item.delay * 1.5}s` }}
+        >
+          <item.icon className={item.size} />
+        </motion.div>
+      ))}
 
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -75,21 +98,26 @@ const HeroSection = () => {
             </div>
 
             {/* Stats row */}
-            <div className="flex gap-6 md:gap-8 mt-12 pt-8 border-t border-border/50 flex-wrap">
+            <div className="flex gap-6 md:gap-10 mt-12 pt-8 border-t border-border/50 flex-wrap">
               {[
-                { value: "10+", label: "Universitas" },
-                { value: "100+", label: "Dosen Terdaftar" },
-                { value: "5", label: "Kategori Label" },
+                { value: "50+", label: "Universitas", icon: GraduationCap },
+                { value: "500+", label: "Dosen Terdaftar", icon: Users },
+                { value: "25+", label: "Kategori Label", icon: BookOpen },
               ].map((s, i) => (
                 <motion.div
                   key={s.label}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 + i * 0.1 }}
-                  className="flex-shrink-0"
+                  className="flex-shrink-0 flex items-center gap-3"
                 >
-                  <p className="font-display text-2xl font-bold text-gradient">{s.value}</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">{s.label}</p>
+                  <div className="w-10 h-10 rounded-xl bg-indigo-muted flex items-center justify-center">
+                    <s.icon className="w-4 h-4 text-indigo" />
+                  </div>
+                  <div>
+                    <p className="font-display text-2xl font-bold text-gradient">{s.value}</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">{s.label}</p>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -121,11 +149,11 @@ const HeroSection = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8 + fl.delay }}
-                className="absolute hidden md:block animate-float-slow glass px-3 py-1.5 rounded-xl shadow-card"
+                className="absolute hidden md:block animate-float-slow glass px-4 py-2 rounded-xl shadow-card"
                 style={{ left: fl.x, top: fl.y, animationDelay: `${fl.delay * 2}s` }}
               >
-                <div className="flex items-center gap-1.5">
-                  <Zap className="w-3 h-3 text-indigo" />
+                <div className="flex items-center gap-2">
+                  <fl.icon className="w-3.5 h-3.5 text-indigo" />
                   <span className="text-xs font-medium text-foreground whitespace-nowrap">{fl.text}</span>
                 </div>
               </motion.div>
