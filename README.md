@@ -2,8 +2,7 @@
 
 1. Melvyn Novsallen Lase - 2802528876
 2. Muhammad Izzuddin Syarofil Adzkia - 2802521213
-3. Muhammad Raid Zakwan - 2802532684
-4. Rizky Putra Ichfiandra - 2802530331
+3. Rizky Putra Ichfiandra - 2802530331
 
 # EduPulse Indonesia
 
