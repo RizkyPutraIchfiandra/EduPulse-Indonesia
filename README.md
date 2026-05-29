@@ -1,4 +1,13 @@
+## Kelompok 1
+
+1. Melvyn Novsalleb Lase - 2802528876
+2. Muhammad Izzuddin Syarofil Adzkia - 2802521213
+3. Muhammad Raid Zakwan - 2802532684
+4. Rizky Putra Ichfiandra - 2802530331
+
 # EduPulse Indonesia
+
+**Akses Website:** [https://edupulse-indonesia.vercel.app/](https://edupulse-indonesia.vercel.app/)
 
 > Platform navigasi akademik untuk mahasiswa Indonesia. Pahami gaya mengajar dosen, optimalkan cara belajarmu.
 
