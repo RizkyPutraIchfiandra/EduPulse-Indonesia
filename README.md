@@ -1,7 +1,7 @@
 ## Kelompok 1
 
-1. Melvyn Novsallen Lase - 2802528876
-2. Muhammad Izzuddin Syarofil Adzkia - 2802521213
+1. Muhammad Izzuddin Syarofil Adzkia - 2802521213
+2. Melvyn Novsallen Lase - 2802528876
 3. Rizky Putra Ichfiandra - 2802530331
 4. Muhammad Raid Zakwan - 2802532684
 
