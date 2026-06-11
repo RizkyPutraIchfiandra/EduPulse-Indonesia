@@ -253,6 +253,6 @@ Project ini dikembangkan untuk tujuan edukasi dan mendukung **SDG 4: Quality Edu
 **Dibangun dengan rasa peduli untuk mahasiswa Indonesia.**
 
 [Repository](https://github.com/RizkyPutraIchfiandra/EduPulse-Indonesia)
-Testing... Welcome [REDACTED].
+Thanks
 
 </div>
