@@ -5,11 +5,25 @@
 3. Rizky Putra Ichfiandra - 2802530331
 4. Muhammad Raid Zakwan - 2802532684
 
+<div align="center">
+
 # EduPulse Indonesia
 
 **Akses Website:** [https://edupulse-indonesia.vercel.app/](https://edupulse-indonesia.vercel.app/)
 
 > Platform navigasi akademik untuk mahasiswa Indonesia. Pahami gaya mengajar dosen, optimalkan cara belajarmu.
+
+![Preview](docs/preview-full.png)
+
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind%20CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
+![shadcn](https://img.shields.io/badge/UI-shadcn%2Fui-000000?logo=shadcnui&logoColor=white)
+![React Query](https://img.shields.io/badge/React%20Query-5-FF4156?logo=reactquery&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)
+
+</div>
 
 EduPulse Indonesia membantu mahasiswa memahami karakter dan gaya mengajar dosen melalui **Objective Labeling System**, sebuah pendekatan rating berbasis label terstruktur tanpa komentar bebas. Tujuannya: mengurangi bias subjektif, menjaga etika akademik, sekaligus memberikan informasi yang berguna untuk strategi belajar.
 
@@ -76,7 +90,9 @@ Project ini mendukung **SDG 4: Quality Education** dengan menjembatani kesenjang
 
 ```
 EduPulse-Indonesia/
-├── public/                      # Aset statis (icon, robots.txt)
+├── public/                      # Aset statis (icon, og.png, robots.txt)
+├── docs/
+│   └── preview-full.png         # Screenshot full-page untuk README
 ├── src/
 │   ├── assets/                  # Gambar dan ilustrasi
 │   ├── components/
