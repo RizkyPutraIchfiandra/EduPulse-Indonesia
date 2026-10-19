@@ -2,7 +2,7 @@ import { chromium } from "playwright";
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-await page.goto("http://localhost:4173", { waitUntil: "networkidle" });
+await page.goto("https://edupulse-indonesia.vercel.app/", { waitUntil: "networkidle" });
 await page.waitForTimeout(1200);
 
 const height = await page.evaluate(() => document.documentElement.scrollHeight);
