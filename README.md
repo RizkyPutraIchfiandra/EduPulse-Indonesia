@@ -31,6 +31,41 @@ Project ini mendukung **SDG 4: Quality Education** dengan menjembatani kesenjang
 
 ---
 
+## A look inside
+
+<table>
+<tr>
+<td width="50%">
+
+![Cari Dosen](docs/cari-dosen.png)
+**Cari Dosen** — Temukan profil dosen berdasarkan nama, universitas, atau label.
+
+</td>
+<td width="50%">
+
+![Tentang](docs/tentang.png)
+**Tentang Kami** — Visi misi platform dan dukungan SDG 4 Quality Education.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+![Kontak](docs/kontak.png)
+**Kontak** — Form hubungi kami dan informasi tim.
+
+</td>
+<td width="50%">
+
+![Home](docs/preview-full.png)
+**Home** — Hero section dengan statistik dan sistem label inovatif.
+
+</td>
+</tr>
+</table>
+
+---
+
 ## Daftar Isi
 
 - [Fitur Utama](#fitur-utama)
